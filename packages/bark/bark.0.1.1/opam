@@ -1,0 +1,26 @@
+opam-version: "2.0"
+name: "bark"
+version: "0.1"
+synopsis: "Unofficial OCaml port of elm/parser (v1.1.0)"
+description: """
+This is an unofficial OCaml port of the elm/parser library (version 1.1.0) by
+Evan Czaplicki.This port is extremely faithful and copies the original almost
+line-for-line.
+"""
+doc: "https://justinlubin.github.io/bark"
+maintainer: "Justin Lubin <jlubi333@gmail.com>"
+authors: "Justin Lubin <jlubi333@gmail.com>"
+license: "BSD 3-Clause"
+homepage: "https://github.com/justinlubin/bark"
+bug-reports: "https://github.com/justinlubin/bark/issues"
+dev-repo: "git+https://github.com/justinlubin/bark.git"
+depends: [ "ocaml" "dune" ]
+build: ["dune" "build" "-p" name "-j" jobs]
+url {
+  src:
+    "https://github.com/justinlubin/bark/releases/download/0.1.1/bark-0.1.1.tbz"
+  checksum: [
+    "sha256=54e0087af53aca314be0d50ca45c1cb6806ebb07c6fdd2c95cfae4ee64ccb961"
+    "sha512=1fdd2ed8ab9aab81402fce5f2c8e33bfe4186d8744f47a0f54899394bea860cf60600a0b8b1eedad897ecfb7dd2a0210cb5a2cd910d8e591d4ac3703da36fd5b"
+  ]
+}
